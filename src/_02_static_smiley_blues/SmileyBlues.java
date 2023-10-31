@@ -1,13 +1,19 @@
 package _02_static_smiley_blues;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 public class SmileyBlues {
 	void start() {
 		// 1. Make a new JFrame and set it to be visible
-
+		JFrame frame = new JFrame();
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 2. Set your frame's default close operation to JFrame.EXIT_ON_CLOSE
 
 		// 3. Make a new JPanel
-
+		JPanel panel = new JPanel();
+		frame.add(panel);
 		// 4. Add your panel to your frame
 
 		// 8. DO THIS LAST: 
@@ -16,6 +22,16 @@ public class SmileyBlues {
 		// Run it again; are your Smileys all yellow now? Also try changing them to red or green!
 
 		// 5. Make three Smiley objects and add them to your panel
+		Smiley smile1 = new Smiley();
+		Smiley smile2 = new Smiley();
+		Smiley smile3 = new Smiley();
+		
+		panel.add(smile1);
+		panel.add(smile2);
+		panel.add(smile3);
+		
+		frame.pack();
+		
 
 		// 6. Pack your frame
 

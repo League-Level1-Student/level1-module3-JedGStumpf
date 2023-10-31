@@ -16,9 +16,9 @@ public class NetflixQueue {
 	 * 
 	 * @return after sorting, the best movie is at position 0
 	 */
-	public Movie getBestMovie() {
+	public Movie getBestMovie(int x) {
 		this.sortMoviesByRating();
-		return movies.get(0);
+		return movies.get(x);
 	}
 
 	/**

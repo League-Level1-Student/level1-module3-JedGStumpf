@@ -53,9 +53,11 @@ public class Canvas {
 
         gamePanel.repaint();
         frame.pack();
+
     }
 
     public void addCircle(Circle circle) {
+
         circles.add(circle);
 
         // Must place after adding new circle

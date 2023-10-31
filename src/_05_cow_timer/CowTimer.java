@@ -26,6 +26,10 @@ import game_tools.Sound;
  */
 public class CowTimer {
     private int seconds;
+    
+//    CowTimer(int seconds){
+//    	this.seconds = seconds;
+//    }
 
     public void setTime(int seconds) {
         this.seconds = seconds;
@@ -33,6 +37,13 @@ public class CowTimer {
     }
 
     public void start() throws InterruptedException {
+        for (int x = 10; x > 0; x--) {
+        	setTime(x);
+        	Thread.sleep(100);
+        	
+        }
+        playSound("moo.wav");
+        
         
     }
 
